@@ -1,0 +1,16 @@
+name: All workflows
+
+on: [pull_request]
+
+jobs:
+  code-check:
+    runs-on: ubuntu-latest
+    container: python:3.9.7
+    steps:
+      - uses: actions/checkout@v2
+      - run: pip install poetry
+      - run: poetry config virtualenvs.create false
+      - run: poetry install
+      - run: black --check src/
+      - run: pylint src/
+      - run: pytest

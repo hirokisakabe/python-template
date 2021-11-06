@@ -1,0 +1,11 @@
+{
+  "name": "python-template",
+  "dockerFile": "Dockerfile",
+  "postCreateCommand": "apt update",
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "ms-azuretools.vscode-docker",
+    "bungcip.better-toml"
+  ]
+}
