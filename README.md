@@ -1,1 +1,11 @@
 # python-template
+
+## Requirements
+
+- [VS Code Remote Development](https://code.visualstudio.com/docs/remote/remote-overview)
+
+## Install packages
+
+```sh
+poetry install
+```
