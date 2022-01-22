@@ -2,7 +2,7 @@
 sample test code
 """
 
-import main
+from python_template import main
 
 
 def test_main():
