@@ -1,7 +1,7 @@
 {
   "name": "python-template",
   "dockerFile": "Dockerfile",
-  "postCreateCommand": "apt update && poetry install",
+  "postCreateCommand": "apt update && pipenv install --dev",
   "settings": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",

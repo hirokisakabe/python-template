@@ -11,9 +11,8 @@ jobs:
     container: python:3.10.0
     steps:
       - uses: actions/checkout@v2
-      - run: pip install poetry
-      - run: poetry config virtualenvs.create false
-      - run: poetry install
-      - run: black --check python_template/
-      - run: pylint python_template
-      - run: pytest
+      - run: pip install pipenv
+      - run: pipenv install --dev
+      - run: pipenv run black --check python_template/
+      - run: pipenv run pylint python_template
+      - run: pipenv run pytest
