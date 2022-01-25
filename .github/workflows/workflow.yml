@@ -14,6 +14,6 @@ jobs:
       - run: pip install poetry
       - run: poetry config virtualenvs.create false
       - run: poetry install
-      - run: black --check src/
-      - run: pylint src/
+      - run: black --check python_template/
+      - run: pylint python_template
       - run: pytest
