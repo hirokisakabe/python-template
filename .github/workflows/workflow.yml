@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     container: python:3.10.0
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - run: pip install pipenv
       - run: pipenv install --dev
       - run: pipenv run black --check python_template/
