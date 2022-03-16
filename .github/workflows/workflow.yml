@@ -16,3 +16,4 @@ jobs:
       - run: pipenv run black --check python_template/
       - run: pipenv run pylint python_template
       - run: pipenv run pytest
+      - run: pipenv run mypy .
