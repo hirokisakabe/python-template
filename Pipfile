@@ -7,7 +7,7 @@ name = "pypi"
 
 [dev-packages]
 black = "==21.12b0"
-pylint = "==2.12.1"
+pylint = "==2.14.3"
 pytest = "==6.2.5"
 mypy = "==0.931"
 isort = "==5.10.1"
